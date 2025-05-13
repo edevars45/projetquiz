@@ -1,0 +1,43 @@
+[
+    {
+        "id": 1,
+        "question": "Qu'est-ce que le HTML ?",
+        "type": "text",
+        "answer": "Le HTML (Hypertext Markup Language en français langage de balise de l'hypertext) est le langage de base du web."
+    },
+    {
+        "id": 2,
+        "question": "À quoi sert-il le HTML ?",
+        "type": "text",
+        "answer": "il sert à structurer le contenu d'une page (titres, paragraphes, images,liens,etc.)."
+    },
+    {
+        "id": 3,
+        "question": "Que veut dire CSS ?",
+        "type": "text",
+        "answer": "Cascading Style sheets ou feuille de style en cascade en français"
+    },
+    {
+        "id": 4,
+        "question": "À quoi sert le CSS ?",
+        "type": "text",
+        "answer": "Le CSS sert à styliser le HTML : couleurs,polices,tailles,marges,positionnement,etc. Il sépare le contenu (HTML) de la présentation (CSS).",
+        "correcte":true
+    },
+    {
+        "id": 5,
+        "question": "Quel est l'élement HTML utilisé pour insérer une image dans une page web ?",
+        "type": "multiple",
+        "choices": ["<img>", "<picture>", "<image>", "<imagefile>"],
+        "answer": "<img>",
+        "correcte": true
+    },
+    {
+        "id": 6,
+        "question": "Que fait la balise <p> en HTML ?",
+        "type": "multiple",
+        "choices": [""],
+        "answer": "<img>",
+        "correcte": true
+    }
+]
