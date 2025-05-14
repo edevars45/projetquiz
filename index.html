@@ -5,11 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="quiz.js" defer></script>
-    <title>Quiz sur le développement web</title>
+    <title>La Quête du Code : un trivial Pursuit 100% Bienveillant</title>
 </head>
 <body>
-    <form action="" id="quiz"></form>
-    <button id="bouton" type="button">Soumettre votre réponse</button>
+    <h1>Dev pursuit : le jeu qui compile fun, savoir et entraide</h1>
+    <form action="" id="quiz">
+        <fieldset>
+  <legend>Select a maintenance drone:</legend>
+
+  <div>
+    <input type="radio" id="huey" name="quiz" value="huey" checked />
+    <label for="huey">Huey</label>
+  </div>
+
+  <div>
+    <input type="radio" id="dewey" name="quiz" value="dewey" />
+    <label for="question">Dewey</label>
+  </div>
+
+  <div>
+    <input type="radio" id="louie" name="quiz" value="reponse" />
+    <label for="question"></label>
+  </div>
+</fieldset>
+    </form>
+    <button id="buzzer" type="button">à voir plus tard</button>
     <div id="resultat" class="resultat"></div>
 </body>
 </html>

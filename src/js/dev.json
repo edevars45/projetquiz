@@ -9,7 +9,8 @@
         "id": 2,
         "question": "À quoi sert-il le HTML ?",
         "type": "text",
-        "answer": "il sert à structurer le contenu d'une page (titres, paragraphes, images,liens,etc.)."
+        "answer": "il sert à structurer le contenu d'une page (titres, paragraphes, images,liens,etc.).",
+        "correcte": true
     },
     {
         "id": 3,
