@@ -2,36 +2,36 @@
     {
         "id": 1,
         "nom": "Pas besoin d’être un·e expert·e",
-        "règle": "👉 Ce quiz est un moment de partage,, pas un test de performance. L’objectif est de s’amuser, pas de se juger. "
+        "regle de bienveillance": "👉 Ce quiz est un moment de partage,, pas un test de performance. L’objectif est de s’amuser, pas de se juger. "
     },
     {
         "id": 2,
         "nom": "Droit à l’erreur = droit d’apprendre", 
-        "règle": "👉 Chaque mauvaise réponse est une opportunité d’apprendre quelque chose de nouveau (et parfois drôle)."
+        "regle de bienveillance": "👉 Chaque mauvaise réponse est une opportunité d’apprendre quelque chose de nouveau (et parfois drôle)."
     },
     {
         "id": 3,
         "nom": "On joue pour le fun, pas pour la compète (sauf si tout le monde veut)",
-        "règle": "👉 L’esprit est collaboratif. Si vous préférez coopérer au lieu de vous affronter, c’est totalement encouragé."
+        "regle de bienveillance": "👉 L’esprit est collaboratif. Si vous préférez coopérer au lieu de vous affronter, c’est totalement encouragé."
     },
     {
         "id":4,
         "nom": "Les réponses (presque bonnes) sont bienvenues",
-        "règle":"👉 On valorise la réflexion, même approximative. Une idée pas tout à fait juste peut ouvrir un débat intéressant."
+        "regle de bienveillance":"👉 On valorise la réflexion, même approximative. Une idée pas tout à fait juste peut ouvrir un débat intéressant."
     },
     {
         "id": 5,
         "nom": "Respect et écoute avant tout",
-        "règle": "👉 Pas de moqueries, pas de (tu savais pas ça ?). Chacun·e a son parcours et ses connaissances."
+        "regle de bienveillance": "👉 Pas de moqueries, pas de (tu savais pas ça ?). Chacun·e a son parcours et ses connaissances."
     },
     {
         "id": 6,
         "nom":"Aide possible entre participant·es" ,
-        "règle": "👉 Vous pouvez discuter, donner des indices (gentils), voire répondre ensemble si vous en avez envie."
+        "regle de bienveillance": "👉 Vous pouvez discuter, donner des indices (gentils), voire répondre ensemble si vous en avez envie."
     },
     {
         "id":7 ,
         "nom":"Bonus bienveillance" ,
-        "règle": "👉 Donne une bonne réponse ET fais un compliment sincère à un·e autre joueur·se ? +1 point bonus ❤️"
+        "regle de bienveillance": "👉 Donne une bonne réponse ET fais un compliment sincère à un·e autre joueur·se ? +1 point bonus ❤️"
     }
 ]

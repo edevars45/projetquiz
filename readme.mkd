@@ -1,0 +1,106 @@
+
+à rendre le 11 juin 2025 
+
+Équipe : Sofiane et Esther 
+
+ Type de quiz : développement web et sur la bienveillance  
+ Durée : 20 minutes 
+ Nombres de question : 40 minutes 
+ Titre : La quête du code 
+ Promesse : un trivial Pursuit 100% Bienveillant, le jeu qui compile fun, savoir et entraide ! (à reprendre plus tard)
+ thème abordée : Allier développement web, bienveillance... et une pincée d'humour pour un code qui fait sourire !
+ les règles : 
+
+### 🎲 Exemple de titre : **"Trivial Dev : le quiz bienveillant du web"**
+
+### 📜 Règles bienveillantes pour le quiz :
+
+1. **Pas besoin d’être un·e expert·e**  
+    👉 Ce quiz est un moment de partage, pas un test de performance. L’objectif est de s’amuser, pas de se juger.
+    
+2. **Droit à l’erreur = droit d’apprendre**  
+    👉 Chaque mauvaise réponse est une opportunité d’apprendre quelque chose de nouveau (et parfois drôle).
+    
+3. **On joue pour le fun, pas pour la compète (sauf si tout le monde veut)**  
+    👉 L’esprit est collaboratif. Si vous préférez coopérer au lieu de vous affronter, c’est totalement encouragé.
+    
+4. **Les réponses "presque bonnes" sont bienvenues**  
+    👉 On valorise la réflexion, même approximative. Une idée pas tout à fait juste peut ouvrir un débat intéressant.
+    
+5. **Respect et écoute avant tout**  
+    👉 Pas de moqueries, pas de "tu savais pas ça ?". Chacun·e a son parcours et ses connaissances.
+    
+6. **Aide possible entre participant·es**  
+    👉 Vous pouvez discuter, donner des indices (gentils), voire répondre ensemble si vous en avez envie.
+    
+7. **Bonus bienveillance**  
+    👉 Donne une bonne réponse ET fais un compliment sincère à un·e autre joueur·se ? +1 point bonus ❤️
+    
+
+---
+
+Si tu veux un format plus formel ou ludique (par exemple des cartes avec emojis, des jokers "HTML", des "patchs correctifs" pour rattraper une mauvaise réponse), je peux t’aider à les créer aussi.
+
+Tu as déjà un titre préféré parmi ceux proposés ou tu veux que je parte d’un autre ?
+1. 👉 **Pour ton application**, tu peux adapter ça avec des catégories **dev web** comme :
+    
+    - Bleu : HTML & CSS
+        
+    - Jaune : JavaScript
+        
+    - Vert : Backend & API
+        
+    - Rose : Accessibilité & UX
+        
+    - Orange : Culture tech & Web éthique
+        
+    - Violet : Fun facts & Communauté
+        
+2. **Tour par tour :**  
+    Chaque joueur·se joue à son tour, répond à une question de la catégorie où il/elle tombe.
+    
+    - Si la réponse est correcte : le joueur peut rejouer (ou gagne un triangle s’il/elle est sur une "case triangle").
+        
+    - Si la réponse est fausse : au joueur suivant.
+        
+3. **Case triangle :**  
+    Quand on tombe sur une case spéciale (camembert), et qu’on répond correctement, on gagne un triangle de la couleur correspondante.
+    
+4. **Fin du jeu :**  
+    Quand un joueur·se a collecté les 6 triangles, il/elle va au centre du plateau pour répondre à **une question finale**. S’il/elle répond juste, il/elle gagne la partie.
+
+### 2. Github :Donner accès en tant que collaborateur (pour un dépôt privé)**
+
+Si vous travaillez sur un dépôt privé et que vous souhaitez permettre à un autre utilisateur de contribuer, vous devez l'ajouter en tant que collaborateur.
+
+Voici comment faire :
+
+1. Allez sur la page du dépôt GitHub.
+    
+2. Cliquez sur **Settings** (en haut à droite de la page du dépôt).
+    
+3. Dans la barre latérale gauche, sélectionnez **Manage access**.
+    
+4. Cliquez sur le bouton **Invite a collaborator**.
+    
+5. Tapez le nom d’utilisateur GitHub de la personne avec laquelle vous souhaitez partager le projet.
+    
+6. Cliquez sur **Add collaborator**.
+    
+
+L’autre utilisateur recevra une invitation à accepter, et une fois acceptée, il pourra accéder au dépôt et y apporter des modifications.
+
+### 3. **Forker le dépôt**
+
+Si vous souhaitez que l’autre utilisateur puisse avoir sa propre copie du projet et y apporter des modifications sans affecter l’original, vous pouvez lui demander de **forker** votre dépôt.
+
+- Sur la page de votre dépôt, l'autre utilisateur peut cliquer sur le bouton **Fork** en haut à droite.
+    
+- Cela créera une copie de votre projet dans son propre compte GitHub. Il pourra travailler dessus de manière indépendante et soumettre des **pull requests** pour proposer des modifications sur le dépôt original.
+
+les polices : 
+
+
+
+
+

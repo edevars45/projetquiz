@@ -40,5 +40,39 @@
         "choices": [""],
         "answer": "<img>",
         "correcte": true
+    },
+    {
+        "id": 7,
+        "question": "Quelle balise HTML est utilisée pour créer un lien hypertexte ?",
+        "type": "multiple",
+        "choices": ["<a>, <p>, <h1>, <h3>"],
+        "answer": "<a>",
+        "correcte": true
+    },
+    {
+        "id": 8,
+        "question": "quelle propriété CSS est utilisées pour changer de couleur de fond d'un élément ?",
+        "type": "multiple",
+        "choices": ["'color', 'background-color', 'border-color','text-color'"],
+        "answer": "background-color",
+        "correcte": true
+    },
+    {
+        "id": 9,
+        "question": "Quel est l'effet de la propriété CSS 'text-align ?",
+        "type": "multiple",
+        "choices": ["'Aligner le texte verticalement','aligner le texte horizontalement', 'Modifier la couleur du texte', 'Appliquer une ombre au texte'"],
+        "answer": "Aligner le texte horizontalement",
+        "correcte": true
+    },
+    {
+        "id": 10,
+        "question": "Quelle balise HTML est utilisée pour définir un titre de niveau 1 sur une page ?",
+        "type": "multiple",
+        "choices": ["<header> , <h1>, <title>, <h6>"],
+        "answer": "<h1>",
+        "correcte": true
     }
+
+    
 ]

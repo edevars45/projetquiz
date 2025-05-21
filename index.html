@@ -3,31 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="quiz.js" defer></script>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script src="/src/js/quiz.js" type="module"></script>
     <title>La Quête du Code : un trivial Pursuit 100% Bienveillant</title>
 </head>
 <body>
     <h1>Dev pursuit : le jeu qui compile fun, savoir et entraide</h1>
     <form action="" id="quiz">
-        <fieldset>
-  <legend>Select a maintenance drone:</legend>
+    <fieldset>
+  <legend>un trivial Pursuit 100% Bienveillant, le jeu qui compile fun, savoir et entraide !</legend>
 
-  <div>
-    <input type="radio" id="huey" name="quiz" value="huey" checked />
-    <label for="huey">Huey</label>
-  </div>
+      <div>
+        
+        <input type="radio" id="reponse" name="quiz" value="response" checked />
+        <label for="huey"></label>
+      </div>
 
-  <div>
-    <input type="radio" id="dewey" name="quiz" value="dewey" />
-    <label for="question">Dewey</label>
-  </div>
+      <div>
+        <input type="radio" id="dewey" name="quiz" value="dewey" />
+        <label for="dewey">Dewey</label>
+      </div>
 
-  <div>
-    <input type="radio" id="louie" name="quiz" value="reponse" />
-    <label for="question"></label>
-  </div>
-</fieldset>
+      <div>
+        <input type="radio" id="louie" name="quiz" value="louie" />
+        <label for="louie">Louie</label>
+      </div>
+    </fieldset>
     </form>
     <button id="buzzer" type="button">à voir plus tard</button>
     <div id="resultat" class="resultat"></div>

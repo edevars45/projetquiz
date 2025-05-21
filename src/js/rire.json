@@ -1,0 +1,10 @@
+    [
+    {
+        "id": 1,
+        "question": "Qu'est ce que la bienveillance ?",
+        "type": "multiple",
+        "choices": ["'être toujours d'accord avec tout le monde ?', 'Montrer de la gentillesse et de l'empathie envers les autres', 'Ignorer les sentiments des autres'"],
+        "answer": "Montrer de la gentillesse et de l'empathie envers les autres",
+        "correcte": true
+    }
+]
