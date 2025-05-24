@@ -39,7 +39,7 @@
 
 ---
 
-Si tu veux un format plus formel ou ludique (par exemple des cartes avec emojis, des jokers "HTML", des "patchs correctifs" pour rattraper une mauvaise réponse), je peux t’aider à les créer aussi.
+
 
 Tu as déjà un titre préféré parmi ceux proposés ou tu veux que je parte d’un autre ?
 1. 👉 **Pour ton application**, tu peux adapter ça avec des catégories **dev web** comme :
