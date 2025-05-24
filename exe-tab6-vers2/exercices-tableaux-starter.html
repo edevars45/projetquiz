@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercices - Méthodes de tableaux</title>
+</head>
+<body>
+    <script>
+        // Tableau de personnages
+        const personnages = [
+            { nom: 'Luke Skywalker', taille: 1.72, poids: 77, couleur_yeux: 'bleu', genre: 'homme' },
+            { nom: 'Darth Vader', taille: 2.02, poids: 136, couleur_yeux: 'jaune', genre: 'homme' },
+            { nom: 'Leia Organa', taille: 1.50, poids: 49, couleur_yeux: 'brun', genre: 'femme' },
+            { nom: 'Anakin Skywalker', taille: 1.88, poids: 84, couleur_yeux: 'bleu', genre: 'homme' },
+        ];
+
+        // Méthode map()
+        // Tableau des noms
+        const noms = personnages.map(p => p.nom);
+        console.log("Noms :", noms);
+
+        // Tableau des poids
+        const poids = personnages.map(p => p.poids);
+        console.log("Poids :", poids);
+
+        // Tableau noms et poids
+        const nomsEtPoids = personnages.map(p => ({ nom: p.nom, poids: p.poids }));
+        console.log("Noms et Poids :", nomsEtPoids);
+
+        // Tableau des prénoms
+        const prenoms = personnages.map(p => p.nom.split(' ')[0]);
+        console.log("Prénoms :", prenoms);
+
+        // Méthode reduce()
+        // Poids total
+        const poidsTotal = personnages.reduce((total, p) => total + p.poids, 0);
+        console.log("Poids Total :", poidsTotal);
+
+        // Taille moyenne
+        const tailleMoyenne = personnages.reduce((somme, p) => somme + p.taille, 0) / personnages.length;
+        console.log("Taille Moyenne :", tailleMoyenne);
+
+        // Méthode filter()
+        // Personnages de plus de 100kg
+        const plusDe100kg = personnages.filter(p => p.poids > 100);
+        console.log("Plus de 100kg :", plusDe100kg);
+
+        // Personnages moins de 2m
+        const moinsDe2Metres = personnages.filter(p => p.taille < 2);
+        console.log("Moins de 2m :", moinsDe2Metres);
+
+        // Personnages masculins
+        const masculins = personnages.filter(p => p.genre === 'homme');
+        console.log("Masculins :", masculins);
+
+        // Personnages féminins
+        const feminins = personnages.filter(p => p.genre === 'femme');
+        console.log("Féminins :", feminins);
+
+        // Méthode sort()
+        // Trier par poids
+        const parPoids = [...personnages].sort((a, b) => a.poids - b.poids);
+        console.log("Tri par Poids :", parPoids);
+
+        // Trier par taille (décroissant)
+        const parTailleDecroissante = [...personnages].sort((a, b) => b.taille - a.taille);
+        console.log("Tri Taille Décroissant :", parTailleDecroissante);
+
+        // Trier par nom (alphabétique)
+        const parNomAlphabetique = [...personnages].sort((a, b) => a.nom.localeCompare(b.nom));
+        console.log("Tri par Nom :", parNomAlphabetique);
+
+        // Méthode every()
+        // Tous yeux bleus ?
+        const tousYeuxBleus = personnages.every(p => p.couleur_yeux === 'bleu');
+        console.log("Tous yeux bleus ?", tousYeuxBleus);
+
+        // Tous pèsent +42kg ?
+        const tousPesentPlus42kg = personnages.every(p => p.poids > 42);
+        console.log("Tous +42kg ?", tousPesentPlus42kg);
+
+        // Tous moins de 2m ?
+        const tousMoinsDe2m = personnages.every(p => p.taille < 2);
+        console.log("Tous -2m ?", tousMoinsDe2m);
+
+        // Tous sont des hommes ?
+        const tousSontDesHommes = personnages.every(p => p.genre === 'homme');
+        console.log("Tous hommes ?", tousSontDesHommes);
+
+        // Méthode some()
+        // Au moins une femme ?
+        const auMoinsUneFemme = personnages.some(p => p.genre === 'femme');
+        console.log("Au moins une femme ?", auMoinsUneFemme);
+
+        // Au moins yeux bleus ?
+        const auMoinsYeuxBleus = personnages.some(p => p.couleur_yeux === 'bleu');
+        console.log("Au moins yeux bleus ?", auMoinsYeuxBleus);
+
+        // Au moins +2m10 ?
+        const auMoinsPlusDe2m10 = personnages.some(p => p.taille > 2.10);
+        console.log("Au moins +2m10 ?", auMoinsPlusDe2m10);
+
+        // Au moins -50kg ?
+        const auMoinsMoinsDe50kg = personnages.some(p => p.poids < 50);
+        console.log("Au moins -50kg ?", auMoinsMoinsDe50kg);
+
+        // BONUS: Nombre par couleur d'yeux
+        const nombreParCouleurYeux = personnages.reduce((acc, p) => {
+            acc[p.couleur_yeux] = (acc[p.couleur_yeux] || 0) + 1;
+            return acc;
+        }, {});
+        console.log("Nombre par couleur d'yeux :", nombreParCouleurYeux);
+    </script>
+</body>
+</html>

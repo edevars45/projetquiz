@@ -1,0 +1,308 @@
+/* styles.css
+   Fichier de style pour l'application Beyond the Avenir. */
+
+/* Styles généraux */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8e0ec; /* Fond rose clair */
+  color: #333;
+}
+
+/* Styles pour l'en-tête */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  height: 55px;
+  margin-right: 15px;
+}
+
+.header-info {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 1.6em;
+  margin: 0;
+  color: #333; /* Couleur du titre */
+}
+
+.emplacement {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.menu-icon {
+  font-size: 1.8em;
+  cursor: pointer;
+  color: black;
+}
+
+/* Styles pour le menu burger */
+nav {
+  background-color: #000; /* Fond noir */
+  position: absolute;
+  top: 65px;
+  right: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 99;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  padding: 15px 20px;
+  border-bottom: 1px solid #333;
+}
+
+nav ul li:last-child {
+  border-bottom: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff; /* Texte blanc */
+  display: block;
+  font-size: 1.1em;
+}
+
+nav a:hover {
+  background-color: #222;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  padding: 25px;
+}
+
+.home-section {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.accroche {
+  font-size: 1.3em;
+  color: #666;
+  margin-bottom: 25px;
+  font-style: italic;
+}
+
+.thought-actions {
+  margin-bottom: 30px;
+}
+
+.thought-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#thought-input {
+  width: 95%;
+  padding: 18px;
+  margin-bottom: 25px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1.15em;
+  box-sizing: border-box;
+  background-color: #fcfcfc;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 25px;
+}
+
+.action-button {
+  background-color: #5cb85c; /* Couleur par défaut pour optimiser (vert) */
+  color: white;
+  border: none;
+  padding: 16px 30px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1.15em;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.optimize-button {
+  background-color: #5cb85c; /* Vert pour optimiser */
+}
+
+.burn-button {
+  background-color: #d9534f; /* Rouge pour brûler */
+}
+
+.action-button:hover {
+  opacity: 0.85;
+}
+
+.action-icon {
+  height: 24px;
+  width: 24px;
+  vertical-align: middle;
+}
+
+.thought-result {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.optimized,
+.burned {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+
+.erreur {
+  color: #d9534f;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.result-image {
+  max-width: 120px;
+  height: auto;
+  margin: 20px 0;
+}
+
+.citation-jour {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  max-width: 350px;
+  text-align: center;
+}
+
+.citation-image {
+  max-width: 90px;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+.citation-texte {
+  font-size: 1em;
+  color: #555;
+  font-style: italic;
+}
+
+.profile-photo {
+  max-width: 180px;
+  height: auto;
+  border-radius: 50%;
+  margin: 20px 0;
+  display: block;
+}
+
+#favoris {
+  padding: 25px;
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+#favoris h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.8em;
+  color: #333;
+}
+
+#favoris ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#favoris li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#favoris li:last-child {
+  border-bottom: none;
+}
+
+.pensee-fav {
+  font-weight: bold;
+}
+
+.action-fav {
+  font-style: italic;
+  color: #777;
+  margin-left: 15px;
+}
+
+.date-fav {
+  font-size: 0.85em;
+  color: #999;
+}
+
+.flaming {
+  animation: burnEffect 0.5s ease-in-out;
+}
+
+@keyframes burnEffect {
+  0% {
+    background-color: #d9534f;
+    transform: scale(1);
+  }
+  50% {
+    background-color: orange;
+    transform: scale(1.1);
+  }
+  100% {
+    background-color: #d9534f;
+    transform: scale(1);
+  }
+}

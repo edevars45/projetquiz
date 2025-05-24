@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<HTML> 
+<HEAD> 
+<link rel="stylesheet"  type="text/css" href="portfolio.css">
+
+
+
+<TITLE>Portfolio</TITLE>
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+</HEAD>
+<BODY> 
+<!--debut de header-->
+<div class="header" > <img class="imgheadpc" src="ressource/B1.20pc.jpg"></div>
+<div class="headertel"> <img class="imgheadtel" src="ressource/B15portable.jpg"></div>
+ <!--fin de header-->
+
+     <!--debut contenupage-->
+
+ <div class="contenupage" >
+   <div> <h1>PORTFOLIO </h1></div>
+    
+ <div class="butt_menu"> 
+   <a href="#" class="cloud-button" id="myBtn">Mes débuts 2022</a>
+   <a href="stage/default_index.html" class="cloud-button" target="_blank">Mon journal de stage</a>
+   <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+       
+        <a href="2022-Mes-debuts/premier_site/default_index.html" class="cloud-button" target="_blank">Mon premier site</a>
+        <a href="2022-Mes-debuts/mon_premier_cv/default_index.html" class="cloud-button" target="_blank">Mon premier cv </a>
+        <a href="2022-Mes-debuts/site_entreprise/default_index.html" class="cloud-button" target="_blank">Site entreprise</a>
+        
+        <span class="close">&times;</span><!--button fermeture-->
+      </div>
+    
+    </div>
+ </div>
+ <script>
+  //SCRIPT POUR FENETRE POP-UP
+ // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+ modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+ modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+ if (event.target == modal) {
+   modal.style.display = "none";
+ }
+}
+
+   </script>
+      <!-- fin contenupagemenu titre-->
+
+
+
+
+
+<!--debut footer-->
+<div class="footer">
+<a href="tel:+33749838222" style="text-decoration:none ;"><img class="logo" src="ressource/tel.png"></a>
+<a href="mailto:devarsesther@gmail.com" style="text-decoration:none ;"><img class="logo" src="ressource/mail.png"></a>
+<a href="https://wa.me/33749838222" style="text-decoration:none ;"><img class="logo" src="ressource/whap.png"></a>
+<a href="https://fr.linkedin.com/in/estherdevars" style="text-decoration:none ;"><img class="logo" src="ressource/link.png"></a>
+
+
+</div>
+<!--fin de footer-->
+
+
+</BODY>
+</HTML>

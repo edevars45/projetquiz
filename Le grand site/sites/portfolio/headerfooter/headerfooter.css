@@ -1,0 +1,44 @@
+body {
+  margin:0;
+  padding:0;}
+
+
+.header { max-width: 100%;}
+.imgheadpc {max-width: 100%;}
+
+.headertel {max-width: 100%;
+display:none;}
+.imgheadtel {max-width: 100%;} 
+
+.footer { max-width: 100%;
+position: absolute;
+left: 0;
+bottom: 0;}
+.imgfooterpc  {max-width: 100%;}
+
+.footertel {
+ max-width: 100%;
+ display:none;
+ position: absolute;
+ left: 0;
+ bottom: 0;}   
+
+.imgfootertel {max-width: 100%;}
+
+
+
+/*RESPONSIVE*/
+@media screen and (max-width:800px){
+
+    .header {display:block;}
+    .headertel {display:none;}
+
+    .footer {display:block;}
+    .footertel {display: none;}
+    
+    
+
+}
+  
+        
+

@@ -1,0 +1,206 @@
+body {
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 19, 103, 1) 100%
+  );
+  margin: 0;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+}
+
+.logo {
+  width: 80%;
+  max-width: 600px;
+  padding-bottom: 40px;
+}
+
+#selection-joueur h2,
+#resultats h2 {
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#champs-numeros,
+#champs-etoiles {
+  display: flex; /* Aligne les éléments (label + boule) en ligne */
+  gap: 20px; /* Espace entre chaque boule */
+  justify-content: center; /* Centre l'ensemble des boules horizontalement */
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.numero-selection,
+.etoile-selection {
+  display: flex; /* Aligne le label et la boule en ligne */
+  flex-direction: column; /* Empile le label et la boule */
+  align-items: center; /* Centre le label au-dessus de la boule */
+}
+
+.champs-numeros label,
+.champs-etoiles label {
+  font-size: 1em;
+  color: #eee;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.champ-numero {
+  width: 50px; /* Taille pour correspondre aux résultats */
+  height: 50px; /* Taille pour correspondre aux résultats */
+  border-radius: 50%;
+  background-image: url("../images/boule.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em; /* Taille de la police pour correspondre aux résultats */
+  font-weight: bold;
+  color: white;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  caret-color: transparent;
+  text-align: center;
+  line-height: 50px; /* Centre verticalement le texte */
+  padding: 0;
+}
+
+.champ-etoile {
+  width: 50px; /* Taille pour correspondre aux résultats */
+  height: 50px; /* Taille pour correspondre aux résultats */
+  border-radius: 50%;
+  background-image: url("../images/etoile.svg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em; /* Taille de la police pour correspondre aux résultats */
+  font-weight: bold;
+  color: white;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  caret-color: transparent;
+  text-align: center;
+  line-height: 50px; /* Centre verticalement le texte */
+  padding: 0;
+}
+
+button {
+  background-color: #ffcc00;
+  color: #001367;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+  margin-top: 40px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #e6b800;
+  transform: scale(1.05);
+}
+
+#resultats {
+  margin-top: 50px;
+  border-top: 2px solid #6699cc;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#tirage {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+#numeros-tirage {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#etoiles-tirage {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#tirage p {
+  font-size: 1.3em;
+  color: white;
+  margin-right: 10px;
+}
+
+.resultat-boule {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-left: 10px;
+  background-size: cover;
+}
+
+.resultat-numero {
+  background-image: url("../images/boule.jpg");
+  color:blue;
+}
+
+.resultat-etoile {
+    background-image: url('../images/etoile.svg');
+    color: #ffcc00; /* Couleur actuelle (jaune) */
+}
+
+#etoiles-tirage span.resultat-etoile {
+    color: blue; /* Nouvelle couleur pour le texte des étoiles tirées */
+}
+
+.hidden {
+  display: none;
+}
+
+/* Tentative de masquer les éléments visuels de focus */
+.numero-selection::before,
+.etoile-selection::before {
+  content: "";
+  display: none !important;
+}
+
+.champ-numero:focus,
+.champ-etoile:focus {
+  outline: none; /* Supprime le contour de focus standard */
+}
+.numero-selection {
+  display: none;
+}
+.etoile-selection {
+  display: none;
+}

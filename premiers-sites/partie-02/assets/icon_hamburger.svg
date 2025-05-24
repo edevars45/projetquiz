@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="30px" height="23px" viewBox="0 0 30 23" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="Hamburger">
+    <path d="M0 0L30 0L30 23L0 23L0 0Z" id="Hamburger" fill="none" fill-rule="evenodd" stroke="none" />
+    <path d="M0 0L30 0L30 5L0 5L0 0Z" id="Rectangle" fill="#000000" fill-rule="evenodd" stroke="none" />
+    <path d="M0 9L30 9L30 14L0 14L0 9Z" id="Rectangle" fill="#000000" fill-rule="evenodd" stroke="none" />
+    <path d="M0 18L30 18L30 23L0 23L0 18Z" id="Rectangle-2" fill="#000000" fill-rule="evenodd" stroke="none" />
+  </g>
+</svg>

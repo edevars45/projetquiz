@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercices JavaScript - POO et Fonctions Essentielles</title>
+  </head>
+  <body>
+    <h1>Exercices JavaScript - POO et Fonctions Essentielles</h1>
+
+    <script>
+      // 1. Déclaration et initialisation de variables
+      console.log("--- 1. Déclaration et initialisation de variables ---");
+      // Quand utiliser : Au début d'un script ou d'une fonction, pour stocker des données.
+      // Où : N'importe où dans le code JavaScript, mais généralement en haut des blocs de code.
+      // Comment : Utiliser 'let', 'const' ou 'var' suivi du nom de la variable et de sa valeur initiale.
+      let nombre1 = 12;
+      let nombre2 = 5;
+      let message =
+        "Bonjour je m'appelle esther et voici un récap du javascript le 13/03/2025 !";
+      let estVrai = true;
+      let tableau = [1, 2, 3];
+
+      // 2. Opérations arithmétiques
+      console.log(
+        "--- 2. Opérations arithmétiques (nombre1(12)+ nombre2(5)---"
+      );
+      // Quand utiliser : Pour effectuer des calculs sur des nombres.
+      // Où : Dans des expressions arithmétiques.
+      // Comment : Utiliser les opérateurs '+', '-', '*', '/', '%' pour effectuer les calculs.
+      let somme = nombre1 + nombre2;
+      console.log("La somme est : " + somme);
+
+      // 3. Modification de variables
+      console.log("--- 3. Modification de variables ---");
+      // Quand utiliser : Pour changer la valeur d'une variable existante.
+      // Où : N'importe où après la déclaration de la variable.
+      // Comment : Utiliser l'opérateur d'affectation '=' pour assigner une nouvelle valeur.
+      nombre1 = 20;
+      console.log("Nouvelle valeur de nombre1 : " + nombre1);
+
+      // 4. Affichage dans la console
+      console.log("--- 4. Affichage dans la console ---");
+      // Quand utiliser : Pour déboguer et inspecter les valeurs des variables.
+      // Où : N'importe où dans le code JavaScript.
+      // Comment : Utiliser 'console.log()' avec les valeurs à afficher.
+      console.log("Message : " + message);
+      console.log("Est vrai : " + estVrai);
+      console.log("Tableau : ", tableau);
+
+      // 5. Opérateurs de comparaison
+      console.log("--- 5. Opérateurs de comparaison ---");
+      // Quand utiliser : Pour comparer des valeurs et prendre des décisions.
+      // Où : Dans des conditions 'if', 'else if', 'else', ou des expressions booléennes.
+      // Comment : Utiliser les opérateurs '==', '!=', '>', '<', '>=', '<=' pour comparer les valeurs.
+      if (nombre1 > nombre2) {
+        console.log("nombre1 est plus grand que nombre2");
+      } else {
+        console.log("nombre1 n'est pas plus grand que nombre2");
+      }
+
+      // 6. Opérateurs logiques
+      console.log("--- 6. Opérateurs logiques ---");
+      // Quand utiliser : Pour combiner des conditions.
+      // Où : Dans des conditions 'if', 'else if', 'else', ou des expressions booléennes.
+      // Comment : Utiliser les opérateurs '&&' (ET), '||' (OU), '!' (NON) pour combiner les conditions.
+      if (estVrai && nombre1 > 10) {
+        console.log("estVrai est vrai et nombre1 est plus grand que 10");
+      } else {
+        console.log("estVrai est faux ou nombre1 n'est pas plus grand que 10");
+      }
+
+      // 7. Fonctions
+      console.log("--- 7. Fonctions ---");
+      // Quand utiliser : Pour regrouper du code réutilisable.
+      // Où : N'importe où dans le code JavaScript.
+      // Comment : Utiliser 'function nomDeLaFonction(paramètres) { ... }' pour définir une fonction.
+      function afficherMessage(msg) {
+        console.log("Message de la fonction : " + msg);
+      }
+      afficherMessage("Ceci est un message de la fonction.");
+
+      // 8. Boucles
+      console.log("--- 8. Boucles ---");
+      // Quand utiliser : Pour répéter des actions.
+      // Où : N'importe où dans le code JavaScript.
+      // Comment : Utiliser 'for', 'while', 'do...while' pour créer des boucles.
+      for (let i = 0; i < tableau.length; i++) {
+        console.log("Élément du tableau : " + tableau[i]);
+      }
+
+      // 9. Manipulation du DOM
+      console.log("--- 9. Manipulation du DOM ---");
+      // Quand utiliser : Pour modifier le contenu et la structure de la page HTML.
+      // Où : N'importe où dans le code JavaScript, après le chargement du DOM.
+      // Comment : Utiliser 'document.createElement()', 'document.querySelector()', 'document.body.appendChild()', etc.
+      let titre = document.createElement("h2");
+      titre.textContent = "Titre créé dynamiquement";
+      document.body.appendChild(titre);
+
+      // 10. Événements
+      console.log("--- 10. Événements ---");
+      // Quand utiliser : Pour rendre la page interactive.
+      // Où : N'importe où dans le code JavaScript, après le chargement du DOM.
+      // Comment : Utiliser 'element.addEventListener("événement", fonction)' pour attacher un gestionnaire d'événements.
+      // Événement : click (lorsque l'utilisateur clique sur un élément)
+      titre.addEventListener("click", function () {
+        alert("Titre cliqué !");
+      });
+
+      // 11. Tableaux (ajout et suppression d'éléments)
+      console.log("--- 11. Tableaux (ajout et suppression d'éléments) ---");
+      // Quand utiliser : Pour manipuler des listes d'éléments.
+      // Où : N'importe où dans le code JavaScript.
+      // Comment : Utiliser 'tableau.push()', 'tableau.pop()', 'tableau.shift()', 'tableau.unshift()', 'tableau.splice()', etc.
+      tableau.push(4);
+      console.log("Tableau après push : ", tableau);
+      tableau.pop();
+      console.log("Tableau après pop : ", tableau);
+
+      // 12. Objets (ajout et modification de propriétés)
+      console.log("--- 12. Objets (ajout et modification de propriétés) ---");
+      // Quand utiliser : Pour stocker des données structurées.
+      // Où : N'importe où dans le code JavaScript.
+      // Comment : Utiliser des littéraux d'objet '{}' pour créer des objets, et 'objet.propriété = valeur' pour ajouter ou modifier des propriétés.
+      let objet = { nom: "John", age: 30 };
+      objet.ville = "Paris";
+      console.log("Objet après ajout de ville : ", objet);
+      objet.age = 31;
+      console.log("Objet après modification de l'âge : ", objet);
+
+      // 13. Conditions ternaires
+      console.log("--- 13. Conditions ternaires ---");
+      // Quand utiliser : Pour écrire des conditions if/else courtes.
+      // Où : N'importe où dans le code JavaScript.
+      // Comment : Utiliser 'condition ? valeurSiVrai : valeurSiFaux' pour créer une condition ternaire.
+      let resultat = nombre1 > 15 ? "Plus grand que 15" : "Moins de 15";
+      console.log("Résultat ternaire : " + resultat);
+
+      // 14. Gestion des erreurs (try...catch)
+      console.log("--- 14. Gestion des erreurs (try...catch) ---");
+      // Quand utiliser : Pour gérer les erreurs potentielles.
+      // Où : Autour du code qui peut générer une erreur.
+      // Comment : Utiliser 'try { ... } catch (erreur) { ... }' pour capturer et gérer les erreurs.
+      let variableInexistante = "Bonjour"; // Définition de la variable
+      try {
+        console.log(variableInexistante); // Utilisation de la variable
+      } catch (erreur) {
+        console.error("Erreur : ", erreur);
+      }
+
+      // 15. Fonctions fléchées (arrow functions)
+      console.log("--- 15. Fonctions fléchées (arrow functions) ---");
+      // Quand utiliser : Pour écrire des fonctions courtes et concises.
+      // Où : N'importe où dans le code JavaScript.
+      // Comment : Utiliser '(paramètres) => { ... }' pour créer une fonction fléchée.
+      let multiplierParDeux = (nombre) => nombre * 2;
+      console.log("10 multiplié par 2 : " + multiplierParDeux(10));
+
+      // 16. Programmation Orientée Objet (POO)
+      // Quand utiliser : Pour organiser le code en objets réutilisables.
+      // Où : N'importe où dans le code JavaScript.
+      // Comment : Utiliser 'class' pour définir des classes, 'constructor()' pour initialiser les objets, et 'new' pour créer des instances.
+      class Personne {
+        constructor(nom, age) {
+          this.nom = nom;
+          this.age = age;
+        }
+
+        sePresenter() {
+          console.log(`Je suis ${this.nom} et j'ai ${this.age} ans.`);
+        }
+      }
+
+      let personne1 = new Personne("Alice", 25);
+      personne1.sePresenter();
+
+      // 17. Héritage (POO)
+      console.log("--- 17. Héritage (POO)---");
+      // Quand utiliser : Pour créer de nouvelles classes basées sur des classes existantes, en réutilisant et en étendant les fonctionnalités.
+      // Où : Dans le code JavaScript, après la définition de la classe de base.
+      // Comment : Utiliser 'class NomDeLaClasseEnfant extends NomDeLaClasseParent { ... }' pour définir une classe enfant.
+      // Événement : Aucun événement spécifique, cette étape est exécutée lors du chargement de la page.
+      class Etudiant extends Personne {
+        constructor(nom, age, ecole) {
+          super(nom, age); // Appelle le constructeur de la classe parente
+          this.ecole = ecole;
+        }
+
+        etudier() {
+          console.log(`${this.nom} étudie à ${this.ecole}.`);
+        }
+      }
+
+      let etudiant1 = new Etudiant("Bob", 20, "Université");
+      etudiant1.sePresenter();
+      etudiant1.etudier();
+
+      // 18. Méthodes statiques (POO)
+      console.log("--- 18. Méthodes statiques (POO) ---");
+      // Quand utiliser : Pour définir des méthodes qui appartiennent à la classe elle-même, et non à ses instances.
+      // Où : Dans la définition de la classe.
+      // Comment : Utiliser 'static nomDeLaMethode(paramètres) { ... }' pour définir une méthode statique.
+      // Événement : Aucun événement spécifique, cette étape est exécutée lors du chargement de la page.
+      class MathUtils {
+        static additionner(a, b) {
+          return a + b;
+        }
+      }
+
+</script>
+    
+  </body>
+</html>

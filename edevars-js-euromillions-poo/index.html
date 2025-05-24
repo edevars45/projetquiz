@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/euromillions.css" />
+    <link
+      rel="icon"
+      href="/images/Euromillions-logo-png.png"
+      type="image/png"
+    />
+    <script type="module" src="js/classes/AffichageResultat.js" defer></script>
+    <script type="module" src="js/classes/GenerateurAleatoire.js"></script>
+    <script type="module" src="js/classes/TirageEuromillions.js"></script>
+    <script type="module" src="js/JoueurEuromillions.js" defer></script>
+    <script type="module" src="js/app.js" defer></script>
+    <script
+      type="module"
+      src="js/classes/ResultatEuromillions.js"
+      defer
+    ></script>
+    <title>Euromillions (POO)</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="euromillions">
+        <img
+          src="images/Euromillions-logo-png.png"
+          class="logo"
+          alt="Logo Euromillions"
+        />
+      </div>
+      <div id="selection-joueur">
+        <h2>Vos numéros</h2>
+        <div class="champs-numeros">
+          <div class="champ-numero">
+            <label for="numero1">N°1:</label>
+            <input type="number" id="numero1" min="1" max="50" />
+          </div>
+          <div class="champ-numero">
+            <label for="numero2">N°2:</label>
+            <input type="number" id="numero2" min="1" max="50" />
+          </div>
+          <div class="champ-numero">
+            <label for="numero3">N°3:</label>
+            <input type="number" id="numero3" min="1" max="50" />
+          </div>
+          <div class="champ-numero">
+            <label for="numero4">N°4:</label>
+            <input type="number" id="numero4" min="1" max="50" />
+          </div>
+          <div class="champ-numero">
+            <label for="numero5">N°5:</label>
+            <input type="number" id="numero5" min="1" max="50" />
+          </div>
+        </div>
+        <h2>Vos étoiles</h2>
+        <div class="champs-etoiles">
+          <div class="champ-etoile">
+            <label for="etoile1">Étoile 1:</label>
+            <input type="number" id="etoile1" min="1" max="12" />
+          </div>
+          <div class="champ-etoile">
+            <label for="etoile2">Étoile 2:</label>
+            <input type="number" id="etoile2" min="1" max="12" />
+          </div>
+        </div>
+        <button id="jouer">Valider mes numéros</button>
+      </div>
+      <div id="resultats" class="hidden">
+        <h2>Résultats du Tirage</h2>
+        <div id="tirage">
+          <p>Numéros: <span id="numeros-tirage"></span></p>
+          <p>Étoiles: <span id="etoiles-tirage"></span></p>
+        </div>
+        <h2>Votre Résultat</h2>
+        <div id="comparaison">
+          <p>Numéros corrects: <span id="numeros-corrects"></span></p>
+          <p>Étoiles correctes: <span id="etoiles-corrects"></span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

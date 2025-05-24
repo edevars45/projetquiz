@@ -1,0 +1,146 @@
+body { 
+  background-image: url("ressource/yogapc.jpg") ;
+  background-size: cover;
+  background-repeat: no-repeat; 
+  margin: 0;
+  padding: 0;}
+.header { max-width: 100%; }
+  .imgheadpc {max-width: 100%;}
+  
+  .headertel {max-width: 100%;
+  display:none;}
+  .imgheadtel {max-width: 100%;} 
+h1 {color: rgb(42, 3, 42);
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 3em;
+padding: 20px;
+background-color: #f0f0f088;
+border-radius: 20px;}
+
+a {text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;}
+
+.contenupage  {display:flex;
+    flex-direction: column;
+    justify-content: center;
+align-items: center; height: 80vh;
+
+}
+.cloud-button {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 50px; /* Pour donner la forme de nuage */
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.cloud-button:hover {
+  background-color: #f0f0f0; /* Couleur de survol */
+}
+    .bouttonacc{
+        background-color: rgb(8, 14, 15);
+        border: 5px rgb(228, 72, 144) solid ;
+        color: white;
+        height:10vh;
+        width:25vw;
+    }
+    .bouttonacc:hover{
+        background-color: rgb(255, 0, 157);
+        border:none;
+        color: rgb(17, 0, 49); }
+ /*FENETRE MODAL*/ 
+        .modal {
+          display: none; /* CACHE */
+          position: fixed; 
+          z-index: 1; /* IL EST DEVANT */
+          padding-top: 100px; 
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%; 
+          overflow: auto; /* SCROLL */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+        
+        /* CONTENU FENETRE MODAL */
+        .modal-content {
+          background-color: palevioletred;
+          margin: auto;
+          padding: 2vh 2vw;
+          display: flex;
+          justify-content: space-between;
+          border: 1px solid #888;
+          width: 80%;
+          border-radius: 25px;
+        }
+        
+        /* fermeture */
+        .close {
+          color: #ffffff;
+          float: right;
+          font-size: 2.5em;
+          font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+          color: #39012a;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        
+
+  .footer { width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-top: 1px rgb(73, 1, 55) solid;
+  height:12vh ;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+}
+
+ 
+  
+ .logo{
+    max-height: 6vh;
+ }
+  
+
+ #linkus {
+  font-family: 'Francois One', sans-serif;
+  font-size: 1.5em;
+  padding: 2vh 0 2vh 0;
+  margin: 0;
+  color: aliceblue;
+  text-decoration: none;
+  margin-left: 3vw;
+  margin-right: 3vw;}
+  
+  
+  
+  /*RESPONSIVE*/
+  @media screen and (max-width:800px){
+  
+      .headertel {display:block;}
+      .header {display:none;}
+      body { 
+        background-image: url("ressource/fondtel.jpg") ;
+        
+      
+          }
+        
+       
+    
+      
+      
+  }

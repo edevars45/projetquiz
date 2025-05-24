@@ -1,0 +1,190 @@
+/* Styles globaux pour le corps de la page */
+body {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* Style pour le fond de la page avec image de casino (uniquement pour les téléphones et petites tablettes) */
+@media (max-width: 767px) { /* styles uniquement pour les écrans de 767px de large ou moins */
+    .casino-background {
+        background: linear-gradient(to bottom, #1e3c72, #e76fb9), url('/img/casino.jpg'); 
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+}
+
+/* Style pour le conteneur principal */
+.container {
+    background-color: rgba(255, 192, 203, 0.7); /* Fond rose semi-transparent */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+/* Style pour le fond de la page avec image de casino (uniquement pour les écrans de bureau) */
+@media (min-width: 768px) { /* Appliquer ces styles uniquement pour les écrans de 768px de large ou plus */
+    .casino-background {
+       background-image:url("/img/casino.jpg");
+        background-position: center;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+}
+
+/* Style pour le conteneur principal */
+.container {
+    background-color: rgba(255, 192, 203, 0.7); /* Fond rose semi-transparent */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+
+
+/* Style pour le titre h1 */
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Style pour le titre "Tirage Euromillions" */
+.tirageEuro {
+    color: #000;
+    text-shadow: none;
+}
+
+/* Style pour les boutons de casino */
+.casino-button {
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Style pour les boutons de casino au survol */
+.casino-button:hover {
+    background-color: #a92e20;
+}
+
+/* Style pour la section des résultats */
+.resultats {
+    margin-top: 20px;
+    border-top: 2px solid #ddd;
+    padding-top: 20px;
+}
+
+/* Style pour les titres h2 */
+h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #ddd;
+}
+
+/* Style pour les conteneurs de numéros et d'étoiles */
+.numeros, .etoiles {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Style pour les numéros et les étoiles individuels */
+.numero, .etoile {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: scale(0);
+    opacity: 0;
+}
+
+/* Style spécifique pour les étoiles */
+.etoile {
+    background-color: #ffc107;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Style pour l'animation des numéros et étoiles */
+.numero.animate, .etoile.animate {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Style pour le conteneur des entrées utilisateur */
+.input-container {
+    margin-top: 20px;
+}
+
+/* Style pour le conteneur des champs de saisie utilisateur */
+.user-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+/* Style pour les champs de saisie utilisateur */
+.input-container input {
+    width: 35px;
+    padding: 5px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Styles pour les écrans de petite taille (max-width: 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .numero, .etoile {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 1em;
+    }
+
+    .input-container input {
+        width: 30px;
+    }
+}

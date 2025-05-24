@@ -1,0 +1,97 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #E8E6E6;
+    margin: 0px;
+    padding: 0px;
+}
+
+.tool-box {
+    background-color:black;
+}
+
+.flipcard {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 300px;
+    perspective: 500px;
+    margin: 10px;
+}
+
+.flipcard.h.flip .front {
+    transform: rotateY(180deg);
+}
+
+.flipcard.h.flip .back {
+    transform: rotateY(0deg);
+}
+
+.flipcard.h .back {
+    transform: rotateY(-180deg);
+}
+
+.flipcard .front, .flipcard .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    transition: all 0.5s ease-in;
+    padding: 10px;
+    backface-visibility: hidden;
+    border-radius: 10px;
+
+}
+
+.smiley {
+    background-image: url(smiley/smiley-1.png);
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    background-color: #F1C826;
+    color: black;
+}
+
+.prenom {
+    text-align: center;
+    margin-top: 180px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nom {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.interrogation {
+    line-height: 270px;
+    font-size: 200px;
+    text-align: center;
+    background-color: #DDDBDB;
+    color: #7B7A7A;
+    font-family: "Arial";
+}
+
+button, select, input {
+    background-color: #F1C826;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    transition:all 0.5s;
+}
+
+button:disabled, #numberSelect:disabled {
+    background-color: #C3C3C3;
+}
+
+#sizer {
+    width: 880px;
+    margin: auto;
+    margin-top:20px;
+}
+

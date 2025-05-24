@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 03 - Calculer le quantième d'un jour</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="site-content">
+        <header class="site-header">
+            <h1>Exercice 03 - Calculer le quantième d'un jour</h1>
+        </header>
+
+        <main class="site-main">
+            <div class="form">
+                <div class="form__field">
+                    <label for="form-day">Saisissez un jour : </label>
+                    <input class="form__day" type="number" id="form-day" name="form-day" min="1" max="31">
+                </div>
+                <div class="form__field">
+                    <label for="form-month">Saisissez un mois : </label>
+                    <input class="form__month" id="form-month" name="form-month" list="form-month-list">
+                    <datalist id="form-month-list">
+                        <option value="Janvier">
+                        <option value="Février">
+                        <option value="Mars">
+                        <option value="Avril">
+                        <option value="Mai">
+                        <option value="Juin">
+                        <option value="Juillet">
+                        <option value="Aout">
+                        <option value="Septembre">
+                        <option value="Octobre">
+                        <option value="Novembre">
+                        <option value="Décembre">
+                    </datalist>
+                </div>
+                <div class="form__field">
+                    <label for="form-year">Saisissez une année : </label>
+                    <input class="form__year" type="number" id="form-year" name="form-year" min="0">
+                </div>
+                <div class="form__controls">
+                    <input class="form__submit" type="submit" value="Valider">
+                </div>
+            </div>
+            <div class="result">
+                <p class="result__number-day"></p>
+            </div>
+        </main>
+
+        <footer class="site-footer">DWWM@COS</footer>
+    </div>
+</body>
+</html>

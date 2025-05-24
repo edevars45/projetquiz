@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Exercice 03 - Gâteau au chocolat</title>
+  </head>
+  <body>
+    <h1>Exercice 03 - Gâteau au chocolat</h1>
+
+    <div class="ingredients">
+      <h2>Gateau au chocolat</h2>
+      <p>Liste des ingrédients</p>
+      <ul id="ingredients">
+        <li>50g de farine</li>
+        <li>100g de beurre</li>
+        <li>11 d'huile</li>
+        <li>200g de chocolat</li>
+        <li>3 oeufs</li>
+      </ul>
+    </div>
+    <script>
+      // Sélection de la liste des ingrédients.
+      const listeIngredients = document.getElementById("ingredients");
+
+      // Suppression de l'huile en utilisant filter avec l'opérateur de décomposition ("..."spread operator)
+      const supprimerHuile = [...listeIngredients.children].filter(
+        (ingredient) => !ingredient.textContent.includes("huile")
+      );
+
+      // Création du nouvel élément pour le sucre.
+      const sucre = document.createElement("li");
+      sucre.textContent = "100g de sucre";
+
+      // Insertion du sucre en avant-dernière position.
+      supprimerHuile.splice(supprimerHuile.length - 1, 0, sucre);
+
+      // Mise à jour de la liste dans le DOM.
+      listeIngredients.innerHTML = ""; // Effacer la liste existante.
+      supprimerHuile.forEach((ingredient) =>
+        listeIngredients.appendChild(ingredient)
+      );
+    </script>
+  </body>
+</html>

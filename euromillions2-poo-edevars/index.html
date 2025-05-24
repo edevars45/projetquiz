@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/euro.css" />
+    <link
+        rel="icon"
+        href="/images/Euromillions-logo-png.png"
+        type="image/png"
+    />
+    <title>Euromillions (POO)</title>
+    <script src="js/app.js" type="module" defer></script>
+</head>
+<body>
+    <header>
+        <img
+            src="images/Euromillions-logo-png.png"
+            class="logo-header"
+            alt="Logo Euromillions"
+        />
+    </header>
+    <div class="container">
+        <div id="selection-joueur">
+            <h2>Choisissez vos numéros et étoiles</h2>
+            <div class="champs-groupe">
+                <div id="champs-numeros">
+                    <div class="numero-selection">
+                        <div class="champ-numero"></div>
+                    </div>
+                    <div class="numero-selection">
+                        <div class="champ-numero"></div>
+                    </div>
+                    <div class="numero-selection">
+                        <div class="champ-numero"></div>
+                    </div>
+                    <div class="numero-selection">
+                        <div class="champ-numero"></div>
+                    </div>
+                    <div class="numero-selection">
+                        <div class="champ-numero"></div>
+                    </div>
+                </div>
+                <div class="separateur"></div>
+                <div id="champs-etoiles">
+                    <div class="etoile-selection">
+                        <label for="etoile-1">Étoile 1</label>
+                        <div class="champ-etoile"></div>
+                    </div>
+                    <div class="etoile-selection">
+                        <label for="etoile-2">Étoile 2</label>
+                        <div class="champ-etoile"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button>Valider et Tirer</button>
+        <div id="resultats" class="hidden">
+            <h2>Résultats du Tirage</h2>
+            <div id="tirage">
+                <p>Tirage :</p>
+                <p id="numeros-tirage"></p>
+                <p id="etoiles-tirage"></p>
+            </div>
+            <div id="comparaison">
+                <p>Vous avez trouvé :</p>
+                <p><span id="numeros-corrects">0</span> numéros corrects</p>
+                <p>et <span id="etoiles-corrects">0</span> étoiles correctes</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

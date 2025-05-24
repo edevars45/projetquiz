@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercice 02 - Le W3C</title>
+</head>
+<body>
+    <h1>Exercice 02 - Le W3C</h1>
+    <script>
+        // Sélection de l'élément body pour y ajouter notre contenu.
+        // document.body est une référence directe à l'élément <body> du document HTML.
+        const body = document.body;
+
+        // Fonction pour créer un élément de texte.
+        // Utilisation : Pour ajouter du texte simple sans formatage particulier.
+        // Quand utiliser : Lorsque j'ai besoin d'insérer du texte statique dans le DOM.
+        function creerTexte(texte) {
+            return document.createTextNode(texte);
+        }
+
+        // Fonction pour créer un élément <strong>.
+        // Utilisation : Pour mettre en évidence une partie du texte en gras.
+        // Quand utiliser : Pour attirer l'attention sur des mots-clés ou des phrases importantes.
+        function creerStrong(texte) {
+            const strong = document.createElement('strong');
+            strong.textContent = texte;
+            return strong;
+        }
+
+        // Fonction pour créer un élément <a>.
+        // Utilisation : Pour insérer un lien hypertexte.
+        // Quand utiliser : Pour créer des liens vers d'autres pages web ou des ressources externes.
+        function creerLien(href, title, texte) {
+            const lien = document.createElement('a');
+            lien.href = href; // Définit l'URL du lien.
+            lien.title = title; // Définit le texte affiché au survol du lien.
+            lien.textContent = texte; // Définit le texte affiché pour le lien.
+            return lien;
+        }
+
+        // Création de la div principale.
+        // Utilisation : Pour regrouper tous les éléments créés dans un conteneur.
+        // Quand utiliser : Pour structurer et organiser le contenu de la page.
+        const mainDiv = document.createElement('div');
+
+        // Assemblage des éléments en utilisant les fonctions de création.
+        // Utilisation : Ajoute chaque élément créé à la div principale.
+        // Quand utiliser : Pour construire le contenu de la div en ajoutant des éléments de texte, des liens et du texte en gras.
+        mainDiv.appendChild(creerTexte('Le '));
+        mainDiv.appendChild(creerStrong('World Wide Web Consortium'));
+        mainDiv.appendChild(creerTexte(', abrégé par le sigle '));
+        mainDiv.appendChild(creerStrong('W3C'));
+        mainDiv.appendChild(creerTexte(', est un '));
+        mainDiv.appendChild(creerLien('http://fr.wikipedia.org/wiki/Organisme_de_normalisation', 'Organisme de normalisation', 'organisme de standardisation'));
+        mainDiv.appendChild(creerTexte(' à but non-lucratif chargé de promouvoir la compatibilité des technologies du '));
+        mainDiv.appendChild(creerLien('http://fr.wikipedia.org/wiki/World_Wide_Web', 'World Wide Web', 'World Wide Web'));
+        mainDiv.appendChild(creerTexte('.'));
+
+        // Ajout de la div principale au body.
+        // Utilisation : Insère la div principale dans le corps du document HTML.
+        // Quand utiliser : Pour afficher le contenu créé dynamiquement dans la page web.
+        body.appendChild(mainDiv);
+    </script>
+</body>
+</html>

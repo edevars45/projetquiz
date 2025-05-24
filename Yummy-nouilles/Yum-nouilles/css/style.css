@@ -1,0 +1,298 @@
+
+/* fontsize importer de google font */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap');
+
+
+/* racine */
+:root {
+    /* Colors */
+    --clr-primary: #d2483d;
+    --clr-secondary: #000000;
+    --clr-background: #f3f3f3;
+    --clr-text: #000000;
+    --clr-text-light: #ffffff;
+
+    /* Font-families */
+    --ff-normal: "Montserrat", sans-serif;
+    --ff-title: "Bebas Neue", sans-serif;
+}
+
+/* --------------------- */
+/* Reset                 */
+/* --------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: aqua;
+}
+
+
+/* contenu       */
+
+.site-container {
+    width: 375px;
+    margin: 0 auto;
+    font-family: var(--ff-normal);
+    font-size: 16px;
+    color: var(--clr-text);
+    line-height: 1.21;
+
+    background-color: var(--clr-background);
+}
+
+/* --------------------- */
+/* Components            */
+/* --------------------- */
+
+/* Primary title */
+.primary-title {
+    font-family: var(--ff-title);
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+}
+
+/* Secondary title */
+.secondary-title {
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--ff-title);
+    font-size: 20px;
+    border-bottom: 3px var(--clr-primary) solid;
+    margin-bottom: 16px;
+}
+
+/* CTA Link */
+.cta-link {
+    width: 256px;
+    padding: 15px;
+    margin: 20px auto 0;
+    background-color: var(--clr-secondary);
+    text-align: center;
+}
+
+.cta-link a {
+    color: var(--clr-text-light);
+    font-family:  var(--ff-title);
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/* Primary header */
+.primary-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 34px 0;
+}
+
+.primary-header__logo {
+    width: 48px;
+}
+
+.primary-nav {
+    display: none;
+    list-style: none;
+}
+
+.mobile-nav-toggle {
+    align-self: center;
+    background: transparent;
+    background-image: url("../assets/icon_hamburger.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 23px;
+    border-width: 0;
+}
+
+/* Primary footer */
+.primary-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 76px;
+    padding: 74px 82px;
+    background-color: var(--clr-secondary);
+}
+
+/* Section main */
+.section-main {
+    margin-top: 50px;
+    margin-bottom: 76px;
+}
+
+.section-main__slogan {
+    font-weight: 600;
+    text-align: center;
+}
+
+.section-main__slogan em {
+    color: var(--clr-primary);
+    font-style: normal;
+}
+
+.section-main__slogan em::before {
+    content: "\a";
+    white-space: pre;
+}
+
+.section-main__logo {
+    margin: 72px auto 0;
+    width: 232px;
+}
+
+/* Section address */
+.section-address {
+    margin-top: 38px;
+}
+
+/* Restaurant card */
+.restaurant-card {
+    padding: 0 60px;
+    margin: 44px auto 0;
+}
+
+.restaurant-card__title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.restaurant-card__address {
+    font-style: normal;
+}
+
+/* Section CTA */
+.section-cta {
+    margin-top: 38px;
+    padding: 44px;
+    background-color: var(--clr-primary);
+}
+
+.section-cta__title {
+    color: var(--clr-text-light);
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 47px;
+}
+
+/* Section expertise */
+.section-expertise {
+    margin-top: 38px;
+}
+
+.section-expertise p {
+    padding: 0 60px;
+    text-align: center;
+}
+
+/* Section networks */
+.section-networks {
+    margin-top: 38px;
+}
+
+.section-networks__image {
+    margin-top: 32px;
+    padding: 0 62px;
+}
+
+/* Section contact */
+.section-contact {
+    margin-top: 76px;
+}
+
+.section-contact__address {
+    padding: 0 61px;
+    font-style: normal;
+    text-align: center;
+}
+
+.section-contact__address a {
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--clr-secondary);
+}
+
+/* Section menu */
+.section-menu {
+    margin-top: 46px;
+    padding: 0 32px;
+}
+
+.section-menu .primary-title {
+    margin-bottom: 30px;
+}
+
+.section-menu>p {
+    display: none;
+}
+
+.section-menu__logo {
+    width: 64px;
+    margin: 0 auto 24px;
+}
+
+.section-menu__menu {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.section-menu__list {
+    list-style-type: none;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.section-menu__list:last-child {
+    margin-bottom: 0;
+}
+
+.section-menu__dish {
+    margin-bottom: 10px;
+}
+
+.section-menu__dish-name {
+    font-weight: 700;
+}
+
+.section-menu__dish-description {
+    display: none;
+}
+
+/* Section addresses */
+.section-addresses {
+    margin-top: 46px;
+}
+
+.section-addresses__restaurant {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.section-addresses__title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.section-addresses__address {
+    font-style: normal;
+}
+
+.section-addresses__address a {
+    text-decoration: none;
+    color: var(--clr-text);
+}
+
+.section-addresses__map {
+    display: none;
+}

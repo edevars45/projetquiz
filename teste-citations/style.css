@@ -1,0 +1,280 @@
+/* Général */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* style.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f8f8; /* Light background */
+    color: #333; /* Dark text color */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #555; /* Slightly lighter heading color */
+    padding-top: 20px;
+}
+
+.description {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* To contain the image and rounded corners */
+}
+
+.gallery-item img {
+    width: 100%;
+    display: block; /* Remove extra space below images */
+    height: auto;
+    border-bottom: 1px solid #eee;
+}
+
+.gallery-item .quote {
+    padding: 15px;
+    font-style: italic;
+    color: #555;
+    text-align: center;
+}
+
+.confession-section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 600px;
+}
+
+.confession-section h2 {
+    text-align: left;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+#confessionText {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: inherit;
+}
+
+.actions {
+    display: flex;
+    gap: 15px;
+}
+
+.action-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+    opacity: 0.9;
+}
+
+.action-button:first-child {
+    background-color: #28a745; /* Green for conserve */
+    color: white;
+}
+
+.action-button:last-child {
+    background-color: #dc3545; /* Red for burn */
+    color: white;
+}
+
+#message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+/* Burn animation (basic example) */
+.burn-animation {
+    animation: burn 1s ease-in-out forwards;
+    background-color: #f0ad4e; /* Orange-ish during burn */
+    color: white !important;
+}
+
+@keyframes burn {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(0.8); opacity: 0.7; }
+    100% { transform: scale(0.1); opacity: 0; }
+}
+
+/* Girly Style Adjustments (can be combined with the above or used separately) */
+.girly body {
+    background-color: #fce4ec; /* Light pink background */
+    color: #c0392b; /* Darker pink/red text */
+}
+
+.girly h1, .girly h2 {
+    color: #e91e63; /* Pink heading */
+}
+
+.girly .description {
+    color: #a05252; /* Muted pink description */
+}
+
+.girly .gallery-item {
+    background-color: #fff;
+    border: 2px dashed #f5c6cb; /* Dashed pink border */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(245, 198, 203, 0.3);
+}
+
+.girly .gallery-item img {
+    border-bottom: 2px dashed #f5c6cb;
+}
+
+.girly .gallery-item .quote {
+    color: #e91e63;
+    font-style: italic;
+}
+
+.girly .confession-section {
+    background-color: #fff;
+    border: 2px solid #f5c6cb;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(245, 198, 203, 0.3);
+}
+
+.girly #confessionText {
+    border: 2px solid #f5c6cb;
+    border-radius: 6px;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Girly font */
+}
+
+.girly .action-button {
+    background-color: #e91e63; /* Pink button */
+    color: white;
+    border-radius: 6px;
+}
+
+.girly .action-button:hover {
+    background-color: #d81b60;
+}
+
+.girly .action-button:first-child {
+    background-color: #8bc34a; /* Light green for conserve */
+}
+
+.girly .action-button:last-child {
+    background-color: #ff5722; /* Orange for burn */
+}
+
+.girly .success-message {
+    background-color: #fde7f3;
+    color: #c62828;
+    border: 1px solid #f5c6cb;
+}
+
+/* Boyish Style Adjustments (can be combined with the above or used separately) */
+.boyish body {
+    background-color: #e0f7fa; /* Light blue background */
+    color: #1e88e5; /* Darker blue text */
+}
+
+.boyish h1, .boyish h2 {
+    color: #007bff; /* Blue heading */
+}
+
+.boyish .description {
+    color: #455a64; /* Muted blue description */
+}
+
+.boyish .gallery-item {
+    background-color: #fff;
+    border: 1px solid #b0bec5; /* Light grey/blue border */
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.boyish .gallery-item img {
+    border-bottom: 1px solid #b0bec5;
+}
+
+.boyish .gallery-item .quote {
+    color: #3f51b5;
+    font-style: italic;
+}
+
+.boyish .confession-section {
+    background-color: #fff;
+    border: 1px solid #b0bec5;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.boyish #confessionText {
+    border: 1px solid #90a4ae;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif; /* Boyish font */
+}
+
+.boyish .action-button {
+    background-color: #007bff; /* Blue button */
+    color: white;
+}
+
+.boyish .action-button:hover {
+    background-color: #0056b3;
+}
+
+.boyish .action-button:first-child {
+    background-color: #28a745; /* Green for conserve */
+}
+
+.boyish .action-button:last-child {
+    background-color: #ffc107; /* Yellow for burn (can be adjusted) */
+    color: #212529;
+}
+
+.boyish .success-message {
+    background-color: #e8f5e9;
+    color: #388e3c;
+    border: 1px solid #c8e6c9;
+}

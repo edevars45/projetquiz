@@ -1,0 +1,204 @@
+body { 
+  background-image: url("ressource/yogapc.jpg") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+ 
+ 
+  margin: 0;
+  padding: 0;
+
+
+    }
+  
+  
+  .header { max-width: 100%;
+    
+   
+  }
+  .imgheadpc {max-width: 100%;}
+  
+  .headertel {max-width: 100%;
+  display:none;}
+  .imgheadtel {max-width: 100%;} 
+
+  
+
+.titre{
+    text-align: center;
+}
+
+.fondbodypc{
+  max-width: 100%;
+  display:none;
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+
+
+
+}
+
+.contenupage  {display:flex;
+  padding-top: 25vh; 
+  justify-content: space-around;
+
+    height: 80vh;}
+:root {
+  --card-height: 40vh;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+.cout {
+width: var(--card-width);
+height: var(--card-height);
+position: relative;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+padding: 0 36px;
+perspective: 2500px;
+margin: 0 50px;
+}
+
+.cover-image {
+width: 100%;
+height: 100%;
+object-fit: contain;
+}
+
+.wrapper {
+transition: all 0.5s;
+position: absolute;
+width: 100%;
+z-index: -1;
+}
+
+.cout:hover .wrapper {
+transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+-webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+-moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+}
+
+.wrapper::before,
+.wrapper::after {
+content: "";
+opacity: 0;
+width: 100%;
+height: 80px;
+transition: all 0.5s;
+position: absolute;
+left: 0;
+}
+.wrapper::before {
+top: 0;
+height: 100%;
+background-image: linear-gradient(
+  to top,
+  transparent 46%,
+  rgba(12, 13, 19, 0.5) 68%,
+  rgba(12, 13, 19) 97%
+);
+}
+.wrapper::after {
+bottom: 0;
+opacity: 1;
+background-image: linear-gradient(
+  to bottom,
+  transparent 46%,
+  rgba(12, 13, 19, 0.5) 68%,
+  rgba(12, 13, 19) 97%
+);
+}
+
+.cout:hover .wrapper::before,
+.wrapper::after {
+opacity: 1;
+}
+
+.cout:hover .wrapper::after {
+height: 120px;
+}
+.title {
+width: 100%;
+transition: transform 0.5s;
+}
+.cout:hover .title {
+transform: translate3d(0%, -50px, 100px);
+}
+
+.character {
+width: 100%;
+opacity: 0;
+transition: all 0.5s;
+position: absolute;
+z-index: -1;
+}
+
+.cout:hover .character {
+opacity: 1;
+transform: translate3d(0%, -30%, 100px);
+} 
+
+
+
+
+    .bouttonacc{
+        background-color: rgb(8, 14, 15);
+        border: 5px rgb(228, 72, 144) solid ;
+        color: white;
+        height:10vh;
+        width:25vw;
+    }
+    .bouttonacc:hover{
+        background-color: rgb(255, 0, 157);
+        border:none;
+        color: rgb(17, 0, 49); }
+  
+
+        
+
+  .footer { width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  border-top: 1px rgb(73, 1, 55) solid;
+  height:12vh ;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+}
+
+ 
+  
+ .logo{
+    max-height: 6vh;
+ }
+  
+
+  
+  
+  
+  /*RESPONSIVE*/
+  @media screen and (max-width:800px){
+  
+      .headertel {display:block;}
+      .header {display:none;}
+      body { 
+        background-image: url("ressource/fondtel.jpg") ;}
+     .contenupage{flex-direction: column;
+    height: 170vh;
+  align-items: center; } 
+
+     .cout {margin-top: 2vh;}
+      
+          }
+        
+       
+    
+      
+      
+  

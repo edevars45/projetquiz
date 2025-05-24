@@ -1,0 +1,110 @@
+body { 
+  background-image: url("ressource/backpaper.jpg") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+ 
+ 
+  margin: 0;
+  padding: 0;
+
+
+    }
+
+    .header, .headertel {position: fixed;
+    top: 0;
+  left:0;}
+    .header { max-width: 100%;
+     
+    
+   
+    }
+    .imgheadpc {max-width: 100%;}
+    
+    .headertel {max-width: 100%;
+    display:none;
+  }
+    .imgheadtel {max-width: 100%;} 
+  
+    h1{  font-family: "Cookie", cursive;
+
+    }
+    p{
+      font-family: "Dancing Script", cursive;
+      text-align: justify;
+      font-size: 1.5em;
+      font-weight: 600;
+      padding: 20px;
+
+    }
+   .lienmenu {text-decoration: none;
+    font-family: "Cookie", cursive;
+    color: rgb(0, 0, 47);
+    font-size: 1.7em;
+    margin-left: 4vw;
+  }
+  
+  .menujournal {text-align: center;
+  background-image: url(ressource/parchemin.jpg);
+background-size: cover;
+margin-bottom: 3px solid rgb(73, 1, 55);
+}
+.imgpolaroid {
+  max-width: 35%;
+
+}
+
+.polaroid{
+
+  display: flex;
+  justify-content: space-around;
+}
+    .j7525{
+      display: grid;
+      grid-template-columns: 75% auto;
+      
+    }
+  
+  .img25{
+
+    max-width: 100%;
+
+   
+  }
+  .txt{
+    max-width: 100%;
+  }
+  
+  .footer { width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    border-top: 3px rgb(73, 1, 55) solid;
+    height:8vh ;
+  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   background-image: url(ressource/parchemin.jpg);
+   background-size: cover;
+  }
+  .logo{
+    max-height: 6vh;
+ }
+  
+
+  
+  
+  /*RESPONSIVE*/
+  @media screen and (max-width:800px){
+  
+        .polaroid{ flex-direction: column;}
+    .headertel {display:block;}
+    .header {display:none;}
+    
+   .imgpolaroid {
+  max-width: 100%;
+  
+}   
+      
+  }

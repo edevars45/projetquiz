@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script type="module" src="./js/swapi.js"></script>
+    <script type="module" src="/Starter/js/app.js" defer></script>
+    
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #666666;
+        }
+        div > pre {
+            background-color: #0C0C0C;
+            color: #CCCCCC;
+            margin-top: 10px;
+            padding: 5px;
+        }
+        .vehicle-card { border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; background-color: white; color: black; }
+        .vehicle-name { font-weight: bold; margin-bottom: 5px; }
+      </style>
+</head>
+<body>
+    <div id="console"></div>
+    <h1>Les Véhicules Star Wars</h1>
+
+    <div id="vehicle-details-4" class="vehicle-card">
+        <h2>Chargement du véhicule 4...</h2>
+    </div>
+
+    <div id="vehicle-details-8" class="vehicle-card">
+        <h2>Chargement du véhicule 8...</h2>
+    </div>
+
+    <div id="vehicle-details-6" class="vehicle-card">
+        <h2>Chargement du véhicule 6...</h2>
+    </div>
+
+    <h3>Liste des Premiers Véhicules</h3>
+    <ul id="first-vehicles-list">
+        <li>Chargement des véhicules...</li>
+    </ul>
+
+    <h3>Liste des Véhicules - Page 2</h3>
+    <ul id="second-vehicles-list">
+        <li>Chargement des véhicules...</li>
+    </ul>
+</body>
+</html>

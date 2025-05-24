@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo-dev-web-Esther.png" type="image/png">
+    <title>Beyond the Horizon - Espace de Confiance</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1>Beyond the Horizon</h1>
+    <p class="description">Un espace pour trouver l'inspiration et exprimer vos pensées.</p>
+
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="images/ivie2.jpg" alt="Image d'inspiration 1">
+            <p class="quote">"Le courage n'est pas l'absence de peur, mais la victoire sur elle."</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/ivie4.jpg" alt="Image d'inspiration 2">
+            <p class="quote">"Chaque nouveau jour est une toile vierge, à vous de la peindre."</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/ivie5.jpg" alt="Image d'inspiration 3">
+            <p class="quote">"La guérison commence par l'acceptation."</p>
+        </div>
+        </div>
+
+    <div class="confession-section">
+        <h2>Écrivez votre lettre</h2>
+        <textarea id="confessionText" placeholder="Partagez vos pensées ici..."></textarea>
+        <div class="actions">
+            <button class="action-button" onclick="saveConfession()">Conserver</button>
+            <button class="action-button" id="burnBtn" onclick="burnConfession()">Brûler</button>
+        </div>
+        <p id="message" class="success-message" style="display: none;">Votre message a été conservé ou symboliquement brûlé.</p>
+    </div>
+
+    <script>
+        const confessionTextarea = document.getElementById('confessionText');
+        const messageElement = document.getElementById('message');
+        const burnButton = document.getElementById('burnBtn');
+
+        function saveConfession() {
+            const confession = confessionTextarea.value.trim();
+            if (confession) {
+                console.log("Confession sauvegardée:", confession);
+                messageElement.textContent = "Votre message a été conservé.";
+                showMessage();
+                confessionTextarea.value = '';
+            } else {
+                messageElement.textContent = "Veuillez écrire quelque chose avant de conserver.";
+                showMessage();
+            }
+        }
+
+        function burnConfession() {
+            burnButton.classList.add('burn-animation');
+            console.log("Confession 'brûlée'.");
+            messageElement.textContent = "Votre message a été symboliquement brûlé.";
+            showMessage();
+            confessionTextarea.value = '';
+            setTimeout(() => {
+                burnButton.classList.remove('burn-animation');
+            }, 1000);
+        }
+
+        function showMessage() {
+            messageElement.style.display = 'block';
+            setTimeout(() => {
+                messageElement.style.display = 'none';
+            }, 3000);
+        }
+        
+    </script>
+
+</body>
+</html>

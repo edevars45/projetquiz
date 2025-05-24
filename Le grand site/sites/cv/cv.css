@@ -1,0 +1,204 @@
+
+     
+
+body { 
+  background-image: url(ressource/fondbody2vertical.jpg);
+  background-size: cover;
+ background-attachment: fixed;
+
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0; }
+p {font-family : "Roboto Flex", sans-serif;} 
+
+h1{
+  font-family: "Calistoga", serif ;
+  font-size: 3.5em;;
+}
+h2{
+  font-family : "Tangerine";
+  font-size: 3em;
+  margin:0;
+}
+h3{
+  font-family : "Tangerine";
+  font-size: 3em;
+  margin:0;
+}
+a{
+  font-family: "Oswald", sans-serif;
+  text-decoration: none;
+  color: blueviolet;
+  font-weight: 800;
+  margin-left: 2vw;
+  padding:1vh ;
+}
+li {font-family : "Roboto Flex", sans-serif;} 
+
+  .header { 
+    height:7vh;
+    width:100%;
+    background-color: white;
+    position: fixed;
+    
+    
+  }
+  .pc {
+    display: flex;
+    flex-direction: flex-end;
+    justify-content: right;
+    align-items: center;
+  }
+  .telephone {
+    display: none;
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /*BURGER*/
+  
+  .menubutt {
+    transition: margin-left .5s;
+    
+  }
+  .ouvrirmenu {
+    font-size: 1.5em;
+    cursor: pointer;
+    background-color: transparent;
+    color: blueviolet;
+    border: none;
+  }
+  
+  .buttonmenu:hover {
+    background-color: #444;
+  } 
+
+.menucote {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: palevioletred;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .menucote  a {
+    padding: 8px 8px 8px 32px;
+    font-family: "Oswald", sans-serif;
+  text-decoration: none;
+  color: blueviolet;
+  font-weight: 800;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .menucote a:hover {
+    color: #f1f1f1;
+  }
+  
+  .menucote .fermermenu {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  
+  
+
+
+
+ .fond{
+  background-color: white;
+  height: 100vh;
+  padding: 2vh 2vw;
+ 
+ }
+.transparent {
+  height: 100vh;
+  padding: 2vh 2vw;
+}
+
+.d2575 { display:grid;
+grid-template-columns: 25% 75%;
+max-width: 60%;
+margin-left: 20%; 
+padding: 20px;
+gap: 10px;
+background-color: rgba(137, 43, 226, 0.283)}
+
+.img25 {max-width: 100%;}
+
+.d7525{display:grid;
+  grid-template-columns: 75% 25%;
+  max-width: 60%;
+margin-left: 20%; 
+padding: 20px;
+gap: 10px;
+background-color: rgba(0, 0, 0, 0.254)}
+
+.img75{max-width: 100%;
+}
+
+.coordonnenom{
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+margin-right: 2em;
+}
+label {font-family: Arial, Helvetica, sans-serif;
+color: rgb(2, 57, 57);}
+input {width:99%}
+
+ /*RESPONSIVE*/
+ @media screen and (max-width:800px){
+  
+  body { 
+    background-image: url(ressource/fondbody2telephone.jpg); }  
+    .pc {
+      display:none;
+      
+    }
+    .telephone {
+      display: flex;
+     
+    }
+    .d25 {display:none;}
+    .d2575 { display:grid;
+      grid-template-columns: auto;
+      max-width: 90%;
+margin-left: 5%; 
+      }
+      
+      
+      
+      .d7525{display:grid;
+        grid-template-columns: auto;
+        max-width: 90%;
+margin-left: 5%; 
+       }
+
+       h1{
+        font-family: "Calistoga", serif ;
+        font-size: 1.5em;
+       
+      }
+      h2{
+        font-family : "Tangerine";
+        font-size: 2em;
+        margin:0;
+      }
+      h3{
+        font-family : "Tangerine";
+        font-size: 2em;
+        margin:0;
+      }
+
+      
+
+ }

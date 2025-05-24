@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Nouveau style pour le conteneur d'images */
+#image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Ajoute un espace entre les images et le conteneur principal */
+}
+
+#image-container img {
+    width: 150px; /* Ajustez la largeur des images selon vos besoins */
+    height: auto; /* Garde les proportions des images */
+    margin: 0 10px; /* Ajoute un espace entre les images */
+}
+
+#container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+#zoneDepart,
+#dropzone {
+    
+    width: 180px;
+    height: 180px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#zoneDepart {
+    border: 3px solid red;
+    background-color: aquamarine;
+}
+
+#dropzone {
+    border: 3px dashed rgb(23, 195, 75);
+}
+
+#draggable {
+    width: 150px;
+    height: 150px;
+    cursor: move;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+}

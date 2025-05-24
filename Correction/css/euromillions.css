@@ -1,0 +1,58 @@
+body {
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,19,103,1) 100%);
+    margin:0px;
+    padding:0px;
+}
+
+.container {
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.zone {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin: 5px;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s;
+}
+
+.boule {
+    background-color: #001367;
+    color: white;
+    border-radius: 50%;
+}
+
+.etoile {
+    background-image: url(../images/etoile.svg);
+    color: black;
+    background-position: center;
+    background-size: cover;
+
+}
+
+#resultat {
+    display: flex;
+    padding:5px;
+    border-radius: 90px;
+    background-color:white;
+}
+
+.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.logo {
+    width:800px;
+    padding-bottom:80px;
+}

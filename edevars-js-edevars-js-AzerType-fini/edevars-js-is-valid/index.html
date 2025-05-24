@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Vérification de date</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Vérification de date</h1>
+  <form id="dateForm">
+    <label for="day">Jour :</label>
+    <input type="number" id="day" min="1" max="31" required><br>
+
+    <label for="month">Mois :</label>
+    <input type="text" id="month" required><br>
+
+    <label for="year">Année :</label>
+    <input type="number" id="year" min="1000" max="9999" required><br>
+
+    <button type="button" onclick="validateDate()">Vérifier</button>
+  </form>
+  <p id="result"></p>
+  <script src="script.js"></script>
+</body>
+</html>

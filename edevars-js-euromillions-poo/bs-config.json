@@ -1,0 +1,16 @@
+{
+  "server": {
+    "baseDir": "./",
+    "routes": {
+      "/js": "./js",
+      "/css": "./css",
+      "/images": "./images",
+      "/js/classes": "./js/classes"
+    }
+  },
+  "files": ["./**/*.{html,htm,css,js,svg,png,gif,jpg,jpeg}"],
+  "watchOptions": {
+    "ignored": ["node_modules"]
+  },
+  "port": 5501
+}

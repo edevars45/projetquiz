@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 01 - Mignons chatons</title>
+    <style>
+        .blockArt {
+            background-color: rgb(182, 68, 37);
+            padding: 30px;
+        }
+
+        body {
+            margin: 20px 100px;
+            padding: 0px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        // Sélection du body
+        const body = document.body;
+
+        // Création d'une div
+        const creerDiv = document.createElement('div');
+
+        // Ajout de la classe 'blockArt' à la div
+        creerDiv.classList.add('blockArt'); 
+
+        // Création d'une balise titre h1
+        const titreH1 = document.createElement('h1');
+
+        // Ajout de texte au titre h1
+        titreH1.textContent = 'Mon Titre Dynamique';
+
+        // Création d'une image
+        const monImage = document.createElement('img');
+
+        // Ajout de l'attribut src à l'image
+        monImage.src = 'chaton.jpeg'; // Chemin de l'image (vérifier l'emplacement du fichier)
+
+        // Modification de la largeur en accedant à la variable monImage, au css qui est le ".style" et ensuite ".width" pour la propriete la largeur de l'image à 100%
+        monImage.style.width = '100%';
+
+        // Création d'un paragraphe
+        const paragraphe = document.createElement('p');
+
+        // Ajout de texte au paragraphe
+        paragraphe.textContent = 'ᕙ༼*◕_◕*༽ᕤécouvrez nos adorables chatons, prêts à apporter joie et tendresse dans votre foyer.'; // Texte modifié
+
+        // Ajout des éléments à la div
+        creerDiv.appendChild(titreH1);
+        creerDiv.appendChild(monImage);
+        creerDiv.appendChild(paragraphe);
+
+        // Ajout de la div au body
+        body.appendChild(creerDiv);
+    </script>
+</body>
+
+</html>

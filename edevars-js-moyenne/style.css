@@ -1,0 +1,93 @@
+body {
+    /* Définit la famille de polices pour l'ensemble de la page */
+    font-family: sans-serif;
+    /* Définit la couleur de fond de la page en rose pastel */
+    background-color: #ffe4e1; /* LightSalmon */
+    /* Active le modèle de boîte flexible (flexbox) pour centrer le contenu */
+    display: flex;
+    /* Centre le contenu horizontalement */
+    justify-content: center;
+    /* Centre le contenu verticalement */
+    align-items: center;
+    /* Assure que le corps de la page occupe au moins toute la hauteur de la fenêtre */
+    min-height: 100vh;
+    /* Supprime les marges par défaut du corps de la page */
+    margin: 0;
+}
+
+.container {
+    /* Définit la couleur de fond du conteneur en blanc */
+    background-color: #fff;
+    /* Ajoute un espacement intérieur (padding) de 20 pixels autour du contenu du conteneur */
+    padding: 20px;
+    /* Arrondit les coins du conteneur avec un rayon de 8 pixels */
+    border-radius: 8px;
+    /* Ajoute une ombre légère au conteneur pour le faire ressortir */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Définit la largeur du conteneur à 400 pixels */
+    width: 400px;
+    /* Centre le texte à l'intérieur du conteneur */
+    text-align: center;
+}
+
+h1 {
+    /* Ajoute une marge en bas du titre de niveau 1 (h1) */
+    margin-bottom: 20px;
+    /* Définit la couleur du texte du titre en gris foncé */
+    color: #333;
+}
+
+label {
+    /* Affiche l'étiquette (label) comme un élément de bloc (sur une nouvelle ligne) */
+    display: block;
+    /* Ajoute une marge en bas de l'étiquette */
+    margin-bottom: 5px;
+    /* Définit la couleur du texte de l'étiquette en gris moyen */
+    color: #555;
+}
+
+input[type="text"] {
+    /* Définit la largeur du champ de saisie de texte à 100% de son conteneur */
+    width: 100%;
+    /* Ajoute un espacement intérieur (padding) de 10 pixels à l'intérieur du champ de saisie */
+    padding: 10px;
+    /* Ajoute une marge en bas du champ de saisie */
+    margin-bottom: 15px;
+    /* Définit une bordure de 1 pixel solide avec une couleur gris clair */
+    border: 1px solid #ccc;
+    /* Arrondit les coins du champ de saisie avec un rayon de 4 pixels */
+    border-radius: 4px;
+    /* Inclut la bordure et le padding dans la largeur totale du champ de saisie */
+    box-sizing: border-box;
+}
+
+button {
+    /* Définit la couleur de fond du bouton en vert pastel */
+    background-color: #98fb98; /* PaleGreen */
+    /* Définit la couleur du texte du bouton en gris foncé */
+    color: #333;
+    /* Ajoute un espacement intérieur (padding) de 12 pixels en haut et en bas, et de 20 pixels à gauche et à droite */
+    padding: 12px 20px;
+    /* Supprime la bordure du bouton */
+    border: none;
+    /* Arrondit les coins du bouton avec un rayon de 4 pixels */
+    border-radius: 4px;
+    /* Change le curseur de la souris en pointeur lors du survol du bouton */
+    cursor: pointer;
+    /* Définit la taille de la police du bouton à 16 pixels */
+    font-size: 16px;
+}
+
+button:hover {
+    /* Change la couleur de fond du bouton en vert plus clair lors du survol */
+    background-color: #90ee90; /* LightGreen */
+}
+
+p#resultat {
+    /* Ajoute une marge en haut du paragraphe avec l'ID "resultat" */
+    margin-top: 20px;
+    /* Met le texte du paragraphe en gras */
+    font-weight: bold;
+    /* Définit la couleur du texte du paragraphe en gris foncé */
+    color: #333;
+}
