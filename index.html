@@ -1,36 +1,67 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/css/style.css">
-    <script src="/src/js/quiz.js" type="module"></script>
-    <title>La Quête du Code : un trivial Pursuit 100% Bienveillant</title>
+  <meta charset="UTF-8" />
+  <title>La Quête du Code</title>
+  
+  <link rel="stylesheet" href="./src/css/style.css" />
+
+  <script type="module" src="./src/js/quiz.js" defer></script>
+  
+  <script type="module" defer>
+    // Fonction asynchrone pour récupérer les données du quiz en fonction du thème
+    async function fetchQuizData(theme) {
+      try {
+        let filePath; // Déclare une variable pour le chemin du fichier
+        // Détermine le chemin du fichier JSON en fonction du thème sélectionné
+        if (theme === 'dev') {
+          filePath = './src/js/dev.json';
+        } else if (theme === 'rire') {
+          filePath = './src/js/rire.json';
+        } else {
+          console.error('Thème inconnu :', theme); // Affiche une erreur si le thème n'est pas reconnu
+          return null; // Retourne null en cas d'erreur
+        }
+
+        // Utilise fetch pour récupérer le fichier JSON
+        const response = await fetch(filePath);
+        // Vérifie si la réponse HTTP est OK (statut 200)
+        if (!response.ok) {
+          throw new Error(`Erreur HTTP ! statut : ${response.status} pour ${filePath}`);
+        }
+        // Parse la réponse JSON
+        const data = await response.json();
+        console.log(`Données chargées pour le thème ${theme} :`, data);
+        return data; // Retourne les données JSON
+      } catch (error) {
+        console.error(`Erreur lors de la récupération de ${theme}.json :`, error);
+        return null; // Retourne null en cas d'erreur lors du fetch
+      }
+    }
+
+    // Exemple d'utilisation (ces appels devraient être dans quiz.js en fonction des interactions utilisateur) :
+    // fetchQuizData('dev'); // Appelle la fonction pour le thème 'dev'
+    // fetchQuizData('rire'); // Appelle la fonction pour le thème 'rire'
+
+    // Votre fichier quiz.js contiendra probablement la logique pour appeler fetchQuizData
+    // en fonction des clics sur les boutons de thème.
+  </script>
 </head>
 <body>
-    <h1>Dev pursuit : le jeu qui compile fun, savoir et entraide</h1>
-    <form action="" id="quiz">
-    <fieldset>
-  <legend>un trivial Pursuit 100% Bienveillant, le jeu qui compile fun, savoir et entraide !</legend>
+  <div class="container">
+    <h1>La Quête du Code</h1>
 
-      <div>
-        
-        <input type="radio" id="reponse" name="quiz" value="response" checked />
-        <label for="huey"></label>
-      </div>
+    <p class="promesse">
+      🚀 Promis, ce n’est pas de la piraterie… juste une quête épique pour ton savoir !
+    </p>
 
-      <div>
-        <input type="radio" id="dewey" name="quiz" value="dewey" />
-        <label for="dewey">Dewey</label>
-      </div>
+    <div id="choix-theme">
+      <button data-theme="dev">Développement</button>
+      <button data-theme="bienveillance">Bienveillance</button>
+      <button data-theme="rire">Humour</button>
+    </div>
 
-      <div>
-        <input type="radio" id="louie" name="quiz" value="louie" />
-        <label for="louie">Louie</label>
-      </div>
-    </fieldset>
-    </form>
-    <button id="buzzer" type="button">à voir plus tard</button>
-    <div id="resultat" class="resultat"></div>
+    <div id="quiz-container"></div>
+  </div>
 </body>
 </html>

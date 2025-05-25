@@ -1,0 +1,140 @@
+/* src/css/style.css */
+
+/* Variables CSS pour les couleurs (facile à modifier !) */
+:root {
+    --couleur-fond-principal: #2c3e50; /* Bleu foncé / Gris anthracite */
+    --couleur-texte-principal: #ecf0f1; /* Blanc cassé */
+    --couleur-bouton-fond: #3498db;   /* Bleu clair */
+    --couleur-bouton-texte: white;
+    --couleur-bouton-hover: #2980b9;  /* Bleu plus foncé au survol */
+    --couleur-boite-contenu: #34495e; /* Gris moyen */
+
+    /* Couleurs pour les thèmes, inspirées de l'idée de catégories distinctes */
+    --theme-dev-couleur: #e74c3c;    /* Rouge pour Développement */
+    --theme-bienveillance-couleur: #27ae60; /* Vert pour Bienveillance */
+    --theme-rire-couleur: #f39c12;   /* Orange pour Humour */
+}
+
+/* Styles généraux pour le corps de la page */
+body {
+    font-family: 'Arial', sans-serif; /* Police simple et lisible */
+    background-color: var(--couleur-fond-principal);
+    color: var(--couleur-texte-principal);
+    display: flex;
+    justify-content: center; /* Centrer le contenu horizontalement */
+    align-items: center; /* Centrer le contenu verticalement */
+    min-height: 100vh; /* La hauteur minimale est 100% de la hauteur de la fenêtre */
+    margin: 0;
+    padding: 20px; /* Un peu d'espace autour du contenu */
+    box-sizing: border-box; /* Inclure le padding dans la largeur/hauteur */
+}
+
+/* Conteneur principal du jeu */
+.container {
+    background-color: var(--couleur-boite-contenu);
+    border-radius: 12px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre légère pour un effet de profondeur */
+    padding: 30px;
+    width: 100%;
+    max-width: 700px; /* Largeur maximale pour un design agréable sur grand écran */
+    text-align: center; /* Centrer le texte à l'intérieur du conteneur */
+}
+
+/* Titre principal */
+h1 {
+    color: var(--couleur-bouton-fond); /* Couleur vive pour le titre */
+    margin-bottom: 20px;
+    font-size: 2.5em; /* Grande taille de police */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Légère ombre sur le texte */
+}
+
+/* Paragraphe de promesse */
+.promesse {
+    font-style: italic;
+    color: var(--couleur-texte-principal);
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+/* Section de choix de thème */
+#choix-theme {
+    display: flex; /* Utiliser Flexbox pour aligner les boutons */
+    justify-content: center; /* Centrer les boutons horizontalement */
+    gap: 20px; /* Espace entre les boutons */
+    margin-bottom: 40px;
+    flex-wrap: wrap; /* Permet aux boutons de passer à la ligne sur petits écrans */
+}
+
+/* Styles des boutons de thème */
+#choix-theme button {
+    background-color: var(--couleur-bouton-fond);
+    color: var(--couleur-bouton-texte);
+    border: none;
+    padding: 15px 25px;
+    border-radius: 8px; /* Coins arrondis pour les boutons */
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition douce */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Ombre sur les boutons */
+}
+
+#choix-theme button:hover {
+    background-color: var(--couleur-bouton-hover);
+    transform: translateY(-2px); /* Léger effet de soulèvement au survol */
+}
+
+/* Styles spécifiques pour chaque thème (pour un effet visuel de catégorie) */
+#choix-theme button[data-theme="dev"] {
+    background-color: var(--theme-dev-couleur);
+}
+#choix-theme button[data-theme="dev"]:hover {
+    background-color: darken(var(--theme-dev-couleur), 10%); /* Nécessite un préprocesseur CSS ou ajuster manuellement */
+    filter: brightness(90%); /* Alternative CSS native pour assombrir */
+}
+
+#choix-theme button[data-theme="bienveillance"] {
+    background-color: var(--theme-bienveillance-couleur);
+}
+#choix-theme button[data-theme="bienveillance"]:hover {
+    background-color: darken(var(--theme-bienveillance-couleur), 10%);
+    filter: brightness(90%);
+}
+
+#choix-theme button[data-theme="rire"] {
+    background-color: var(--theme-rire-couleur);
+}
+#choix-theme button[data-theme="rire"]:hover {
+    background-color: darken(var(--theme-rire-couleur), 10%);
+    filter: brightness(90%);
+}
+
+/* Conteneur du quiz (sera rempli par JavaScript) */
+#quiz-container {
+    background-color: rgba(0, 0, 0, 0.2); /* Fond semi-transparent */
+    border-radius: 8px;
+    padding: 20px;
+    min-height: 150px; /* Hauteur minimale pour qu'il soit visible */
+    display: flex; /* Utiliser flex pour centrer le contenu futur */
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    color: var(--couleur-texte-principal);
+    border: 1px dashed rgba(255, 255, 255, 0.3); /* Bordure en pointillé pour indiquer un contenu dynamique */
+}
+
+/* Media Queries pour la responsivité */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    #choix-theme {
+        flex-direction: column; /* Empile les boutons sur petits écrans */
+        gap: 15px;
+    }
+
+    #choix-theme button {
+        width: 80%; /* Les boutons prennent plus de place */
+        max-width: 300px;
+    }
+}
